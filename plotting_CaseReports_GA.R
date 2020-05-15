@@ -20,8 +20,8 @@ par(mfrow=c(2,1),mar=c(3.8,4.5,1.75,1)) #two subplots, one per row
 
 ##############PLOT 1 - JUST KNOWLEDGE ON 29 APR
 
-XTioks = c(plotTIMES[seq(1,60,by=7)],BplotTIMES[60])
-plot(plotTIMES,B_C_new_state, ylab="New recorded cases per day in Georgia, USA",xlab="",col=NA,log="",xaxt="n",ylim=c(0,1000),xlim=c(BplotTIMES[1]-0.5,BplotTIMES[60]+0.5),xaxs="i",main="What we knew about cases on/before April 29th, as of April 29th")
+XTioks = c(plotTIMES[seq(1,60,by=7)],plotTIMES[60])
+plot(plotTIMES,B_C_new_state, ylab="New recorded cases per day in Georgia, USA",xlab="",col=NA,log="",xaxt="n",ylim=c(0,1000),xlim=c(plotTIMES[1]-0.5,plotTIMES[60]+0.5),xaxs="i",main="What we knew about cases on/before April 29th, as of April 29th")
 axis.Date(1,at=XTioks,format = "%e %b",las=2)
 
 #WEEKENDS
@@ -52,7 +52,7 @@ legend("topleft",bg="white",legend = c("Records from 29 April 2020"), col=c(COLA
 
 ##############PLOT 2 -  KNOWLEDGE ON 13MAY
 
-plot(plotTIMES,B_C_new_state, ylab="New recorded cases per day in Georgia, USA",xlab="",col=NA,log="",xaxt="n",ylim=c(0,1000),xlim=c(BplotTIMES[1]-0.5,BplotTIMES[60]+0.5),xaxs="i",main = "What we knew about cases on/before April 29th, as of May 13th")
+plot(plotTIMES,B_C_new_state, ylab="New recorded cases per day in Georgia, USA",xlab="",col=NA,log="",xaxt="n",ylim=c(0,1000),xlim=c(plotTIMES[1]-0.5,plotTIMES[60]+0.5),xaxs="i",main = "What we knew about cases on/before April 29th, as of May 13th")
 axis.Date(1,at=XTioks,format = "%e %b",las=2)
 
 #WEEKENDS
